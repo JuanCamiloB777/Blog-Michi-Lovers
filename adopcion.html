@@ -1,55 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MichiLover</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="ficha_adopcion.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MichiLover</title>
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap%22" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="ficha_adopcion.js"></script>
 </head>
 
+<body>
   <!-- ═══ NAVBAR ═══ -->
-    <header class="navbar" id="navbar" role="banner">
-      <div class="container">
-        <nav class="navbar__inner" aria-label="Navegacion principal">
-          <a href="index.html" class="navbar__logo" id="navbar-logo" aria-label="Michi Lovers - Ir al inicio">
-            <img src="logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img" />
-            Michi<span>Lovers</span>
-          </a>
-          <ul class="navbar__menu" id="navbar-menu" role="list">
-            <li><a href="index.html" class="navbar__link" id="nav-inicio">Inicio</a></li>
-            <li><a href="adopcion.html" class="navbar__link" id="nav-adopcion">Adopciones</a></li>
-            <li><a href="articulos.html" class="navbar__link" id="nav-consejos">Consejos</a></li>
-            <li><a href="quienesSomos.html" class="navbar__link" id="nav-blog">¿Quienes somos?</a></li>
-            <li><a href="contacto.html" class="navbar__link is-active" id="nav-contacto" aria-current="page">Contacto</a>
-            </li>
-          </ul>
-          <div class="navbar__cta" id="navbar-cta">
-            <a href="adopcion.html" class="btn btn--dark btn--sm" id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
-          </div>
-          <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menu de navegacion" aria-expanded="false"
-            aria-controls="navbar-menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </button>
-        </nav>
-      </div>
-    </header>
-
-
-<section class="fichaAdopcion" id="ficha_adopcion">
-    <!--Encabezado de Section Ficha de Adopción-->
-      <div class="header-ficha">
-        <h2>Fichas de Adopción MichiLovers</h2>
-        <p>Encuetra a tu compañero fiel y llenalo de amor, asi como él a ti</p>
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container">
+      <nav class="navbar__inner" aria-label="Navegacion principal">
+        <a href="index.html" class="navbar__logo" id="navbar-logo" aria-label="Michi Lovers - Ir al inicio">
+          <img src="logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img" />
+          Michi<span>Lovers</span>
+        </a>
+        <ul class="navbar__menu" id="navbar-menu" role="list">
+          <li><a href="index.html" class="navbar__link" id="nav-inicio">Inicio</a></li>
+          <li><a href="adopcion.html" class="navbar__link" id="nav-adopcion">Adopciones</a></li>
+          <li><a href="articulos.html" class="navbar__link" id="nav-consejos">Consejos</a></li>
+          <li><a href="quienesSomos.html" class="navbar__link" id="nav-blog">¿Quienes somos?</a></li>
+          <li><a href="contacto.html" class="navbar__link is-active" id="nav-contacto" aria-current="page">Contacto</a>
+          </li>
+        </ul>
+        <div class="navbar__cta" id="navbar-cta">
+          <a href="adopcion.html" class="btn btn--dark btn--sm" id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
+        </div>
+        <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menu de navegacion" aria-expanded="false"
+          aria-controls="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
     </div>
-  
+  </header>
+
+  <section class="fichaAdopcion" id="ficha_adopcion">
+    <!--Encabezado de Section Ficha de Adopción-->
+    <div class="header-ficha">
+      <h2>Fichas de Adopción MichiLovers</h2>
+      <p>Encuetra a tu compañero fiel y llenalo de amor, asi como él a ti</p>
+    </div>
+
     <!--Tarjeta de Michis-->
-     <div id="tarjeta" class="tarjeta-michi">
-        <!--Las  tarjetas se cargan en JS-->
-     </div>
-</section>
+    <div id="tarjeta" class="tarjeta-michi">
+      <!--Las  tarjetas se cargan en JS-->
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
@@ -76,3 +83,6 @@
       <p class="footer__copyright">&copy; 2026 Michi Lovers. Hecho para quienes aman a los michis.</p>
     </div>
   </footer>
+</body>
+
+</html>
