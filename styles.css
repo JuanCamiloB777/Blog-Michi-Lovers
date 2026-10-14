@@ -1555,10 +1555,11 @@ button {
   line-height: 1.8;
 }
 
-/* ── Layout principal: formulario + sidebar ── */
+/* ── Layout principal: formulario centrado ── */
 .contact-layout {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: minmax(0, 800px);
+  justify-content: center;
   gap: var(--space-2xl);
   padding-bottom: var(--space-3xl);
   align-items: start;
@@ -2252,6 +2253,7 @@ body {
   margin-top: 0.5rem;
   font-size: 0.85rem;
   color: #7B8A75;
+}
 }
 
 /*-----SECTION ADOPCION----*/
