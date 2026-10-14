@@ -1,0 +1,100 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Adopción</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="ficha_adopcion.js"></script>
+</head>
+
+<!-- ═══ NAVBAR ═══ -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container">
+      <nav class="navbar__inner" aria-label="Navegacion principal">
+        <a href="index.html" class="navbar__logo" id="navbar-logo" aria-label="Michi Lovers - Ir al inicio">
+          <img src="logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img" />
+          Michi<span>Lovers</span>
+        </a>
+        <ul class="navbar__menu" id="navbar-menu" role="list">
+          <li><a href="index.html"    class="navbar__link"           id="nav-inicio">Inicio</a></li>
+          <li><a href="blog.html"     class="navbar__link"           id="nav-blog">Blog</a></li>
+          <li><a href="#ficha_adopcion" class="navbar__link"           id="nav-adopcion">Adopciones</a></li>
+          <li><a href="consejos.html" class="navbar__link"           id="nav-consejos">Consejos</a></li>
+          <li><a href="contacto.html" class="navbar__link is-active" id="nav-contacto" aria-current="page">Contacto</a></li>
+        </ul>
+        <div class="navbar__cta" id="navbar-cta">
+          <a href="adopcion.html" class="btn btn--dark btn--sm" id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
+        </div>
+        <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menu de navegacion" aria-expanded="false" aria-controls="navbar-menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+<section class="fichaAdopcion" id="ficha_adopcion">
+    <!--Encabezado de Section Ficha de Adopción-->
+      <div class="header-ficha">
+        <h2>Fichas de Adopción MichiLovers</h2>
+        <p>Encuetra a tu compañero fiel y llenalo de amor, asi como él a ti</p>
+    </div>
+  
+    <!--Tarjeta de Michis-->
+     <div id="tarjeta" class="tarjeta-michi">
+        <!--Las  tarjetas se cargan en JS-->
+     </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand-logo"><img src="logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img" style="height: 38px; vertical-align: middle; margin-right: 8px;" />Michi<span>Lovers</span></div>
+          <p class="footer__brand-text">Una comunidad hecha con amor para quienes comparten su vida con un gato. Cada huella cuenta. &#x1F43E;</p>
+          <div class="footer__socials" aria-label="Redes sociales">
+            <a href="#" class="footer__social-link" id="footer-ig" aria-label="Instagram">&#x1F4F8;</a>
+            <a href="#" class="footer__social-link" id="footer-tt" aria-label="TikTok">&#x1F3B5;</a>
+            <a href="#" class="footer__social-link" id="footer-fb" aria-label="Facebook">&#x1F4AC;</a>
+            <a href="#" class="footer__social-link" id="footer-yt" aria-label="YouTube">&#x25B6;&#xFE0F;</a>
+          </div>
+        </div>
+        <nav aria-label="Explorar">
+          <h4 class="footer__nav-title">Explorar</h4>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="index.html"    class="footer__nav-link" id="footer-nav-inicio">Inicio</a></li>
+            <li><a href="blog.html"     class="footer__nav-link" id="footer-nav-blog">Blog</a></li>
+            <li><a href="adopcion.html" class="footer__nav-link" id="footer-nav-adopcion">Adopciones</a></li>
+            <li><a href="consejos.html" class="footer__nav-link" id="footer-nav-consejos">Consejos</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Comunidad">
+          <h4 class="footer__nav-title">Comunidad</h4>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="#" class="footer__nav-link" id="footer-nav-historias">Historias Michi</a></li>
+            <li><a href="#" class="footer__nav-link" id="footer-nav-galeria">Galeria Felina</a></li>
+            <li><a href="#" class="footer__nav-link" id="footer-nav-eventos">Eventos</a></li>
+            <li><a href="#" class="footer__nav-link" id="footer-nav-newsletter">Newsletter</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Legal">
+          <h4 class="footer__nav-title">Legal</h4>
+          <ul class="footer__nav-list" role="list">
+            <li><a href="privacidad.html" class="footer__nav-link" id="footer-nav-privacidad">Privacidad</a></li>
+            <li><a href="terminos.html"   class="footer__nav-link" id="footer-nav-terminos">Terminos de uso</a></li>
+            <li><a href="cookies.html"    class="footer__nav-link" id="footer-nav-cookies">Cookies</a></li>
+            <li><a href="contacto.html"   class="footer__nav-link" id="footer-nav-contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          &copy; 2026 <span>Michi Lovers</span>. Hecho con <span class="footer__heart" aria-hidden="true">&hearts;</span> para cada michi y su humano.
+        </p>
+      </div>
+    </div>
+  </footer>
+ 

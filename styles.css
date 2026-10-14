@@ -1963,5 +1963,172 @@ button {
 }
 
 /* ============================================================
+   FICHAS DE ADOPCIÓN — Componente Michi Lovers
+   ============================================================ */
+
+/* Sección contenedora */
+.fichaAdopcion {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--space-2xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+}
+
+/* Encabezado */
+.header-ficha {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.header-ficha h2 {
+  font-family: var(--font-secondary);
+  font-size: var(--fs-3xl);
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.header-ficha p {
+  font-size: var(--fs-md);
+  color: var(--color-accent);
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Grilla de tarjetas */
+.tarjeta-michi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Tarjeta individual de adopción */
+.card-adopcion {
+  background-color: var(--color-card);
+  border: 2px solid var(--color-bg);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.card-adopcion:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Contenedor e imagen */
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 220px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.card-adopcion:hover .card-img img {
+  transform: scale(1.04);
+}
+
+/* Badge de género */
+.badge-genero {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background-color: var(--color-card);
+  color: var(--color-text);
+  padding: 0.25rem var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  border: 1px solid rgba(62, 42, 36, 0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Cuerpo de la tarjeta */
+.card-contenido {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-contenido h3 {
+  margin: 0 0 var(--space-xs) 0;
+  font-family: var(--font-secondary);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.info-edad {
+  font-size: var(--fs-sm);
+  color: var(--color-accent);
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.desc-mascota {
+  font-size: var(--fs-sm);
+  color: var(--color-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-lg);
+  flex-grow: 1;
+}
+
+/* Botones y acciones */
+.acciones-card {
+  display: flex;
+  gap: var(--space-xs);
+  margin-top: auto;
+}
+
+/* Botón Adoptar */
+.btn-adoptar {
+  flex-grow: 1;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  padding: 0.65rem var(--space-md);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-primary);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
+}
+
+.btn-adoptar:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: 0 6px 20px rgba(213, 112, 76, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-adoptar:active {
+  transform: scale(0.97);
+}
+
+/* Ajuste responsive para pantallas móviles */
+@media (max-width: 768px) {
+  .header-ficha h2 {
+    font-size: var(--fs-2xl);
+  }
+  
+  .tarjeta-michi {
+    grid-template-columns: 1fr;
+  }
+}
+/* ============================================================
    FIN DEL ARCHIVO — styles.css · Michi Lovers Blog
    ============================================================ */
