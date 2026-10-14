@@ -1555,10 +1555,11 @@ button {
   line-height: 1.8;
 }
 
-/* ── Layout principal: formulario + sidebar ── */
+/* ── Layout principal: formulario centrado ── */
 .contact-layout {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: minmax(0, 800px);
+  justify-content: center;
   gap: var(--space-2xl);
   padding-bottom: var(--space-3xl);
   align-items: start;
@@ -2253,3 +2254,140 @@ body {
   font-size: 0.85rem;
   color: #7B8A75;
 }
+}
+}
+
+/*-----SECTION ADOPCION----*/
+
+/* Sección contenedora */
+.fichaAdopcion {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  padding: var(--space-xl) var(--space-md);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+}
+
+/* Encabezado */
+.header-ficha {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.header-ficha h2 {
+  font-size: var(--fs-3xl);
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+  font-weight: 700;
+}
+
+.header-ficha p {
+  font-size: var(--fs-base);
+  color: var(--color-accent);
+  margin: 0;
+}
+
+/* Grilla de tarjetas */
+.tarjeta-michi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* Tarjeta individual */
+.card-adopcion {
+  background-color: var(--color-card);
+  border: 2px solid var(--color-bg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.card-adopcion:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge-genero {
+  position: absolute;
+  top: var(--space-xs);
+  right: var(--space-xs);
+  background-color: var(--color-card);
+  color: var(--color-text);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  border: 1px solid var(--color-bg);
+}
+
+.card-contenido {
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-contenido h3 {
+  margin: 0 0 var(--space-xs) 0;
+  font-size: var(--fs-lg);
+  color: var(--color-text);
+  font-family: var(--font-secondary);
+}
+
+.info-edad {
+  font-size: var(--fs-sm);
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.desc-mascota {
+  font-size: var(--fs-sm);
+  color: var(--color-dark);
+  line-height: 1.4;
+  margin-bottom: var(--space-md);
+  flex-grow: 1;
+}
+
+.acciones-card {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.btn-adoptar {
+  flex-grow: 1;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-adoptar:hover {
+  background-color: var(--color-accent-hover);
+}
+/* ============================================================
+   FIN DEL ARCHIVO — styles.css · Michi Lovers Blog
+   ============================================================ */
