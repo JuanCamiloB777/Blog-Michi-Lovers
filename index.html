@@ -154,16 +154,7 @@
       </div>
     </footer>
 
-    <script>
-    const navbarToggle = document.getElementById('navbar-toggle');
-    const navbarMenu = document.getElementById('navbar-menu');
+    <script src="assets/js/script.js"></script>
 
-    navbarToggle.addEventListener('click', () => {
-      const isOpen = navbarToggle.getAttribute('aria-expanded') === 'true';
-      navbarToggle.setAttribute('aria-expanded', String(!isOpen));
-      navbarToggle.setAttribute('aria-label', isOpen ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
-      navbarMenu.classList.toggle('is-open', !isOpen);
-    });
-  </script>
   </body>
 </html>
