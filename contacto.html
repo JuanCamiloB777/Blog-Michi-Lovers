@@ -1,200 +1,240 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>Contacto — Michi Lovers | Escribenos</title>
-  <meta name="description"
-    content="Tienes dudas, quieres colaborar o compartir la historia de tu michi? Escribenos y con gusto te respondemos. La comunidad Michi Lovers esta aqui para ti." />
+    <!-- SEO -->
+    <title>Contacto — Michi Lovers | Escribenos</title>
+    <meta name="description"
+      content="Tienes dudas, quieres colaborar o compartir la historia de tu michi? Escribenos y con gusto te respondemos. La comunidad Michi Lovers esta aqui para ti." />
 
-  <!-- Fuentes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet" />
 
-  <!-- Estilos globales del sistema de diseño (incluye sección 24 para Contacto) -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <!-- Estilos globales del sistema de diseño (incluye sección 24 para Contacto) -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body>
+  <body>
 
-  <!-- ═══ NAVBAR ═══ -->
-  <header class="navbar" id="navbar" role="banner">
-    <div class="container">
-      <nav class="navbar__inner" aria-label="Navegacion principal">
-        <a href="index.html" class="navbar__logo" id="navbar-logo" aria-label="Michi Lovers - Ir al inicio">
-          <img src="logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img" />
-          Michi<span>Lovers</span>
-        </a>
-        <ul class="navbar__menu" id="navbar-menu" role="list">
-          <li><a href="index.html" class="navbar__link" id="nav-inicio">Inicio</a></li>
-          <li><a href="adopcion.html" class="navbar__link" id="nav-adopcion">Adopciones</a></li>
-          <li><a href="articulos.html" class="navbar__link" id="nav-consejos">Consejos</a></li>
-          <li><a href="quienesSomos.html" class="navbar__link" id="nav-blog">¿Quienes somos?</a></li>
-          <li><a href="contacto.html" class="navbar__link is-active" id="nav-contacto" aria-current="page">Contacto</a>
-          </li>
-        </ul>
-        <div class="navbar__cta" id="navbar-cta">
-          <a href="adopcion.html" class="btn btn--dark btn--sm" id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
-        </div>
-        <button class="navbar__toggle" id="navbar-toggle" aria-label="Abrir menu de navegacion" aria-expanded="false"
-          aria-controls="navbar-menu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main-content">
-
-    <!-- ═══ HERO ═══ -->
-    <section class="contact-hero" aria-labelledby="contact-hero-title">
+    <!-- ═══ NAVBAR ═══ -->
+    <header class="navbar" id="navbar" role="banner">
       <div class="container">
-        <h1 class="contact-hero__title" id="contact-hero-title">
-          Tienes algo que<br />
-          <span class="highlight">contarnos?</span>
-        </h1>
-        <p class="contact-hero__subtitle">
-          Ya sea para compartir la historia de tu michi, proponer una colaboracion
-          o simplemente saludar, estamos aqui con los oidos y las patitas bien abiertas. &#x1F43E;
-        </p>
-      </div>
-    </section>
-
-    <!-- ═══ LAYOUT PRINCIPAL ═══ -->
-    <section class="container" aria-label="Seccion de contacto">
-      <div class="contact-layout">
-        <!-- Formulario -->
-        <div class="contact-form-card">
-          <h2 class="contact-form-card__title">Envianos un mensaje</h2>
-          <p class="contact-form-card__subtitle">Te respondemos en menos de 48 horas. Prometido con huella de michi.
-            &#x1F431;</p>
-
-          <div class="form-success" id="form-success" role="alert" aria-live="polite">
-            <span aria-hidden="true">&#x1F389;</span>&nbsp;
-            Mensaje enviado! Nos pondremos en contacto muy pronto.
-          </div>
-
-          <form class="contact-form" id="contact-form" novalidate>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="contact-nombre">Nombre <span class="required"
-                    aria-label="requerido">*</span></label>
-                <input class="form-input" type="text" id="contact-nombre" name="nombre" placeholder="Ej. Valentina"
-                  autocomplete="given-name" required minlength="2" />
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="contact-apellido">Apellido <span class="required"
-                    aria-label="requerido">*</span></label>
-                <input class="form-input" type="text" id="contact-apellido" name="apellido" placeholder="Ej. Ramirez"
-                  autocomplete="family-name" required minlength="2" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-email">Correo electronico <span class="required"
-                  aria-label="requerido">*</span></label>
-              <input class="form-input" type="email" id="contact-email" name="email" placeholder="tu@correo.com"
-                autocomplete="email" required />
-              <span class="form-hint">Nunca compartiremos tu correo con nadie.</span>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-motivo">Motivo del mensaje <span class="required"
-                  aria-label="requerido">*</span></label>
-              <select class="form-select" id="contact-motivo" name="motivo" required>
-                <option value="" disabled selected>Selecciona una opcion...</option>
-                <option value="adopcion">&#x1F43E; Quiero adoptar un michi</option>
-                <option value="historia">&#x1F4D6; Quiero compartir la historia de mi gato</option>
-                <option value="colaboracion">&#x1F91D; Propuesta de colaboracion</option>
-                <option value="consejo">&#x1F4AC; Tengo una pregunta o consejo</option>
-                <option value="prensa">&#x1F4E2; Prensa / Medios</option>
-                <option value="otro">&#x270F;&#xFE0F; Otro</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-asunto">Asunto</label>
-              <input class="form-input" type="text" id="contact-asunto" name="asunto"
-                placeholder="Sobre que quieres hablarnos?" maxlength="100" />
-            </div>
-
-            <div class="form-group">
-              <label class="form-label" for="contact-mensaje">Mensaje <span class="required"
-                  aria-label="requerido">*</span></label>
-              <textarea class="form-textarea" id="contact-mensaje" name="mensaje"
-                placeholder="Cuentanos todo... (o solo manda un maullido &#x1F431;)" required minlength="20"></textarea>
-              <span class="form-hint">Minimo 20 caracteres.</span>
-            </div>
-
-            <div class="form-group">
-              <div class="form-checkbox-group">
-                <input class="form-checkbox" type="checkbox" id="contact-privacidad" name="privacidad" required />
-                <label class="form-checkbox-label" for="contact-privacidad">
-                  He leido y acepto la <a href="privacidad.html">Politica de Privacidad</a> de Michi Lovers.
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-checkbox-group">
-                <input class="form-checkbox" type="checkbox" id="contact-newsletter" name="newsletter" />
-                <label class="form-checkbox-label" for="contact-newsletter">
-                  Quiero recibir el boletin de Michi Lovers con consejos, adopciones y novedades felinas. &#x1F43E;
-                </label>
-              </div>
-            </div>
-
-            <div class="form-submit">
-              <span class="form-submit__note">* Campos obligatorios</span>
-              <button class="btn btn--primary btn--lg" type="submit" id="contact-submit-btn">
-                Enviar mensaje &#x1F431;
-              </button>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <div class="footer__brand-logo">
-            <img src="logo2michilovers.jpg" alt="" />
-            <span>Michi<span class="footer__brand-highlight">Lovers</span></span>
-          </div>
-          <p class="footer__brand-text">Un espacio hecho con cariño para los amantes de los gatos.</p>
-        </div>
-        <section class="footer__team" aria-labelledby="footer-team-title">
-          <h2 class="footer__team-title" id="footer-team-title">Equipo de desarrollo</h2>
-          <ul class="footer__team-list">
-            <li>David Marca</li>
-            <li>Jhoiner Andretty</li>
-            <li>Juan Bohorquez</li>
-            <li>Laura Garcia</li>
-            <li>Natalia Villalobos</li>
+        <nav class="navbar__inner" aria-label="Navegacion principal">
+          <a href="index.html" class="navbar__logo" id="navbar-logo"
+            aria-label="Michi Lovers - Ir al inicio">
+            <img src="assets/images/logo.png" alt="Logo Michi Lovers"
+              class="navbar__logo-img" />
+            Michi<span>Lovers</span>
+          </a>
+          <ul class="navbar__menu" id="navbar-menu" role="list">
+            <li><a href="index.html" class="navbar__link"
+                id="nav-inicio">Inicio</a></li>
+            <li><a href="adopcion.html" class="navbar__link"
+                id="nav-adopcion">Adopciones</a></li>
+            <li><a href="articulos.html" class="navbar__link"
+                id="nav-consejos">Consejos</a></li>
+            <li><a href="quienesSomos.html" class="navbar__link"
+                id="nav-blog">¿Quienes somos?</a></li>
+            <li><a href="contacto.html" class="navbar__link is-active"
+                id="nav-contacto" aria-current="page">Contacto</a>
+            </li>
           </ul>
-        </section>
+          <div class="navbar__cta" id="navbar-cta">
+            <a href="adopcion.html" class="btn btn--dark btn--sm"
+              id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
+          </div>
+          <button class="navbar__toggle" id="navbar-toggle"
+            aria-label="Abrir menu de navegacion" aria-expanded="false"
+            aria-controls="navbar-menu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </nav>
       </div>
-      <p class="footer__copyright">&copy; 2026 Michi Lovers. Hecho para quienes aman a los michis.</p>
-    </div>
-  </footer>
+    </header>
 
-  <script src="script.js"></script>
+    <main id="main-content">
 
-</body>
+      <!-- ═══ HERO ═══ -->
+      <section class="contact-hero" aria-labelledby="contact-hero-title">
+        <div class="container">
+          <h1 class="contact-hero__title" id="contact-hero-title">
+            Tienes algo que<br />
+            <span class="highlight">contarnos?</span>
+          </h1>
+          <p class="contact-hero__subtitle">
+            Ya sea para compartir la historia de tu michi, proponer una
+            colaboracion
+            o simplemente saludar, estamos aqui con los oidos y las patitas bien
+            abiertas. &#x1F43E;
+          </p>
+        </div>
+      </section>
+
+      <!-- ═══ LAYOUT PRINCIPAL ═══ -->
+      <section class="container" aria-label="Seccion de contacto">
+        <div class="contact-layout">
+          <!-- Formulario -->
+          <div class="contact-form-card">
+            <h2 class="contact-form-card__title">Envianos un mensaje</h2>
+            <p class="contact-form-card__subtitle">Te respondemos en menos de 48
+              horas. Prometido con huella de michi.
+              &#x1F431;</p>
+
+            <div class="form-success" id="form-success" role="alert"
+              aria-live="polite">
+              <span aria-hidden="true">&#x1F389;</span>&nbsp;
+              Mensaje enviado! Nos pondremos en contacto muy pronto.
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contact-nombre">Nombre <span
+                      class="required"
+                      aria-label="requerido">*</span></label>
+                  <input class="form-input" type="text" id="contact-nombre"
+                    name="nombre" placeholder="Ej. Valentina"
+                    autocomplete="given-name" required minlength="2" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contact-apellido">Apellido
+                    <span class="required"
+                      aria-label="requerido">*</span></label>
+                  <input class="form-input" type="text" id="contact-apellido"
+                    name="apellido" placeholder="Ej. Ramirez"
+                    autocomplete="family-name" required minlength="2" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Correo electronico
+                  <span class="required"
+                    aria-label="requerido">*</span></label>
+                <input class="form-input" type="email" id="contact-email"
+                  name="email" placeholder="tu@correo.com"
+                  autocomplete="email" required />
+                <span class="form-hint">Nunca compartiremos tu correo con
+                  nadie.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-motivo">Motivo del
+                  mensaje <span class="required"
+                    aria-label="requerido">*</span></label>
+                <select class="form-select" id="contact-motivo" name="motivo"
+                  required>
+                  <option value disabled selected>Selecciona una
+                    opcion...</option>
+                  <option value="adopcion">&#x1F43E; Quiero adoptar un
+                    michi</option>
+                  <option value="historia">&#x1F4D6; Quiero compartir la
+                    historia de mi gato</option>
+                  <option value="colaboracion">&#x1F91D; Propuesta de
+                    colaboracion</option>
+                  <option value="consejo">&#x1F4AC; Tengo una pregunta o
+                    consejo</option>
+                  <option value="prensa">&#x1F4E2; Prensa / Medios</option>
+                  <option value="otro">&#x270F;&#xFE0F; Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-asunto">Asunto</label>
+                <input class="form-input" type="text" id="contact-asunto"
+                  name="asunto"
+                  placeholder="Sobre que quieres hablarnos?" maxlength="100" />
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-mensaje">Mensaje <span
+                    class="required"
+                    aria-label="requerido">*</span></label>
+                <textarea class="form-textarea" id="contact-mensaje"
+                  name="mensaje"
+                  placeholder="Cuentanos todo... (o solo manda un maullido &#x1F431;)"
+                  required minlength="20"></textarea>
+                <span class="form-hint">Minimo 20 caracteres.</span>
+              </div>
+
+              <div class="form-group">
+                <div class="form-checkbox-group">
+                  <input class="form-checkbox" type="checkbox"
+                    id="contact-privacidad" name="privacidad" required />
+                  <label class="form-checkbox-label" for="contact-privacidad">
+                    He leido y acepto la <a href="privacidad.html">Politica de
+                      Privacidad</a> de Michi Lovers.
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="form-checkbox-group">
+                  <input class="form-checkbox" type="checkbox"
+                    id="contact-newsletter" name="newsletter" />
+                  <label class="form-checkbox-label" for="contact-newsletter">
+                    Quiero recibir el boletin de Michi Lovers con consejos,
+                    adopciones y novedades felinas. &#x1F43E;
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-submit">
+                <span class="form-submit__note">* Campos obligatorios</span>
+                <button class="btn btn--primary btn--lg" type="submit"
+                  id="contact-submit-btn">
+                  Enviar mensaje &#x1F431;
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__brand-logo">
+              <img src="assets/images/logo_final.jpg" alt />
+              <span>Michi<span
+                  class="footer__brand-highlight">Lovers</span></span>
+            </div>
+            <p class="footer__brand-text">Un espacio hecho con cariño para los
+              amantes de los gatos.</p>
+          </div>
+          <section class="footer__team" aria-labelledby="footer-team-title">
+            <h2 class="footer__team-title" id="footer-team-title">Equipo de
+              desarrollo</h2>
+            <ul class="footer__team-list">
+              <li>David Marca</li>
+              <li>Jhoiner Andretty</li>
+              <li>Juan Bohorquez</li>
+              <li>Laura Garcia</li>
+              <li>Natalia Villalobos</li>
+            </ul>
+          </section>
+        </div>
+        <p class="footer__copyright">&copy; 2026 Michi Lovers. Hecho para
+          quienes aman a los michis.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+  </body>
 
 </html>
