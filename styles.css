@@ -1027,14 +1027,14 @@ button {
 .footer {
   background-color: var(--color-footer-bg);
   color: var(--color-footer-text);
-  padding-block: var(--space-2xl) var(--space-lg);
+  padding-block: var(--space-xl) var(--space-md);
 }
 
 .footer__inner {
   display: grid;
-  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-columns: 1fr 1.2fr;
   gap: var(--space-2xl);
-  padding-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
   border-bottom: 1px solid rgba(255, 249, 242, 0.10);
 }
 
@@ -1050,7 +1050,20 @@ button {
   margin-bottom: var(--space-sm);
 }
 
-.footer__brand-logo span {
+.footer__brand-logo > img {
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: var(--color-card);
+  object-fit: contain;
+}
+
+.footer__brand-logo > span {
+  color: var(--color-footer-text);
+}
+
+.footer__brand-highlight {
   color: var(--color-accent);
 }
 
@@ -1058,7 +1071,23 @@ button {
   font-size: var(--fs-sm);
   color: rgba(255, 249, 242, 0.60);
   line-height: 1.7;
-  max-width: 260px;
+}
+
+.footer__team-title {
+  font-family: var(--font-secondary);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  color: var(--color-footer-text);
+  margin-bottom: var(--space-sm);
+}
+
+.footer__team-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-md);
+  row-gap: var(--space-xs);
+  font-size: var(--fs-xs);
+  color: rgba(255, 249, 242, 0.60);
 }
 
 /* Iconos de redes sociales */
@@ -1131,6 +1160,8 @@ button {
   font-size: var(--fs-xs);
   color: rgba(255, 249, 242, 0.45);
   line-height: 1.8;
+  padding-top: var(--space-md);
+  text-align: center;
 }
 
 .footer__copyright span {
