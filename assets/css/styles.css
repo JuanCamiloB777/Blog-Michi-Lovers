@@ -153,4 +153,74 @@ body {
 
 /*NATALIA*/
 
+/*-----SECTION ADOPCION----*/
+
+/* Sección contenedora */
+
+.fichaAdopcion {
+  background-color: var(--color-bg, #F5EBE0);
+}
+
+.header-ficha h2 {
+  color: var(--color-text, #3E2A24);
+  font-family: var(--font-secondary, 'Nunito', sans-serif);
+}
+
+.header-ficha p {
+  color: var(--color-accent, #D5704C);
+  font-family: var(--font-primary, 'Quicksand', sans-serif);
+}
+
+/* Tarjeta base */
+.card-adopcion {
+  background-color: var(--color-card, #FFF9F2);
+  border-radius: var(--radius-xl, 20px) !important;
+  transition: transform var(--transition-base, 250ms ease), box-shadow var(--transition-base, 250ms ease);
+}
+
+.card-adopcion:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md, 0 8px 20px rgba(62, 42, 36, 0.12)) !important;
+}
+
+/* Wrapper e Imagen */
+.card-img-wrapper {
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img-wrapper img {
+  height: 100%;
+  width: 100%;
+  transition: transform var(--transition-smooth, 400ms ease);
+}
+
+.card-adopcion:hover .card-img-wrapper img {
+  transform: scale(1.05);
+}
+
+/* Badge personalizado */
+.badge-genero {
+  background-color: var(--color-card, #FFF9F2);
+  color: var(--color-text, #3E2A24);
+  font-family: var(--font-primary, 'Quicksand', sans-serif);
+  font-weight: 700;
+  border: 1px solid rgba(62, 42, 36, 0.1);
+}
+
+/* Tipografía de la Card */
+.card-adopcion .card-title {
+  color: var(--color-text, #3E2A24);
+  font-family: var(--font-secondary, 'Nunito', sans-serif);
+}
+
+.card-adopcion .info-edad {
+  color: var(--color-accent, #D5704C);
+}
+
+.card-adopcion .desc-mascota {
+  font-family: var(--font-primary, 'Quicksand', sans-serif);
+  font-size: var(--fs-sm, 0.875rem);
+  line-height: 1.5;
+}
 /*JUAN BOHORQUEZ*/
