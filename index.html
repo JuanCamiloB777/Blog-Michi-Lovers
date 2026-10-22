@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Michi Lovers - Inicio</title>
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-      rel="stylesheet" />
-    <!-- Bootstrap 5.3.3 CSS Estable -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Link BOOTSTRAP 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tus estilos personalizados -->
+    
+    <!-- AQQUI LINKEO MI CSS OROGINAL EN CARPETA DE ASSETS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
 
-    <!-- HEADER / NAVEGACIÓN -->
+    <!-- HEADER / NAVBAR -->
     <header class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar" role="banner">
       <div class="container">
-        <!-- Logo / Marca -->
+
+        <!-- MARCA / LOGO -->
         <a href="index.html" class="navbar-brand d-flex align-items-center me-auto" id="navbar-logo" aria-label="Michi Lovers - Ir al inicio">
           <img src="assets/images/logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img me-2" style="height: 40px; object-fit: contain;">
           <span class="brand-text">Michi<span class="brand-accent">Lovers</span></span>
         </a>
 
-        <!-- Botón Toggle para vista móvil -->
+        <!-- BOTON DE HAMBURGUESA -->
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú de navegación">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Menú Colapsable y CTA -->
+        <!-- MENU COLLAPSE Y CTA -->
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar-menu">
             <li class="nav-item">
@@ -51,7 +53,7 @@
             </li>
           </ul>
 
-          <!-- Botón Call to Action -->
+          <!-- BOTON CTA -->
           <div class="navbar__cta d-flex mt-3 mt-lg-0" id="navbar-cta">
             <a href="adopcion.html" class="btn btn-michi-cta w-100 w-lg-auto" id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
           </div>
@@ -59,60 +61,104 @@
       </div>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="home-main">
+    <!-- CONTENIDO PRINCIPAL BOOTSTRAP -->
+    <main class="home-main container my-5 pt-3">
 
-      <!-- Sección de bienvenida -->
-      <section class="hero-section">
-        <h1>El rincón favorito de los michis y sus humanos 🐾</h1>
-        <p class="hero-subtitle">Un espacio que armamos con todo el amor del mundo para hablar de las locuras, manías y cuidados de nuestros gatos.</p>
+      <!-- MENSAJE DE BIENVENIDA -->
+      <section class="hero-section text-center p-4 p-md-5 mb-5 bg-michi-card rounded-4 shadow-sm">
+        <h1 class="fw-bold mb-3">El rincón favorito de los michis y sus humanos 🐾</h1>
+        <p class="hero-subtitle lead text-muted mx-auto" style="max-width: 700px;">
+          Un espacio que armamos con todo el amor del mundo para hablar de las locuras, manías y cuidados de nuestros gatos.
+        </p>
       </section>
 
-      <!-- Artículo destacado -->
-      <article class="featured-article">
-        <div class="article-text">
-          <h2>¿Por qué mi gato me amasa como si fuera masa de pan?</h2>
-          <h3>Ese hábito tan tierno que nos dejan en las piernas</h3>
-          <p>Si tienes gato, seguro te ha pasado: se te acuesta encima y empieza a mover las patitas de arriba a abajo sin parar. Aunque da mucha risa, esto viene de cuando eran unos bebés y lo hacían con su mamá para estimular la leche.</p>
-          <p>Lo más tierno es que al hacerlo liberan feromonas por las almohadillas, así que básicamente te están poniendo su sello de propiedad y diciendo "tú me perteneces y te quiero".</p>
-        </div>
-        <div class="article-image">
-          <img
-            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba"
-            alt="Gato descansando plácidamente">
+      <!-- ARTICULO DESTACADO (PRINCIPAL GATO MIO) -->
+      <article class="featured-article p-4 p-md-5 mb-5 bg-michi-card rounded-4 shadow-sm">
+        <div class="row align-items-center g-4">
+          <div class="article-text col-12 col-md-6">
+            <h2 class="fw-bold h2 mb-2">¿Por qué mi gato me amasa como si fuera masa de pan?</h2>
+            <h3 class="h5 brand-accent mb-3 fw-bold">Ese hábito tan tierno que nos dejan en las piernas</h3>
+            <p class="text-secondary">
+              Si tienes gato, seguro te ha pasado: se te acuesta encima y empieza a mover las patitas de arriba a abajo sin parar. Aunque da mucha risa, esto viene de cuando eran unos bebés y lo hacían con su mamá para estimular la leche.
+            </p>
+            <p class="text-secondary mb-0">
+              Lo más tierno es que al hacerlo liberan feromonas por las almohadillas, así que básicamente te están poniendo su sello de propiedad y diciendo "tú me perteneces y te quiero".
+            </p>
+          </div>
+          <div class="article-image col-12 col-md-6">
+            <img
+              src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba"
+              alt="Gato descansando plácidamente"
+              class="img-fluid rounded-3 w-100 object-fit-cover shadow-sm"
+              style="max-height: 350px;">
+          </div>
         </div>
       </article>
 
-      <!-- Artículos secundarios en cuadrícula -->
-      <section class="sub-articles-section">
-        <h3 class="section-title">Otras cosas que nos encantan de los gatos</h3>
+      <!-- BOTONES DESPLEGABLES DE LAS DOS TARJETAS INFERIORES -->
+      <section class="sub-articles-section mb-5">
+        <h3 class="section-title text-center fw-bold mb-4">Otras cosas que nos encantan de los gatos</h3>
 
-        <div class="articles-grid">
-          <article class="card-article">
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1573865526739-10659fec78a5"
-                alt="Gato curioso mirando a la cámara">
-            </div>
-            <div class="card-body">
-              <h4>¿Qué nos quiere decir con la cola?</h4>
-              <h5>Aprende a leer su humor diario</h5>
-              <p>La cola es literal el radar de los michis. Si la ves levantada con puntita de interrogación, anda feliz; si la mueve rápido de lado a lado, mejor dale su espacio un rato porque está fastidiado.</p>
-            </div>
-          </article>
+        <div class="articles-grid row row-cols-1 row-cols-md-2 g-4">
+          
+          <!-- TARJETA 1 -->
+          <div class="col">
+            <article class="card-article card h-100 border-0 shadow-sm bg-michi-card rounded-4 overflow-hidden">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1573865526739-10659fec78a5"
+                  alt="Gato curioso mirando a la cámara"
+                  class="card-img-top object-fit-cover"
+                  style="height: 220px;">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="fw-bold h5 mb-1">¿Qué nos quiere decir con la cola?</h4>
+                <h5 class="brand-accent h6 mb-3 fw-bold">Aprende a leer su humor diario</h5>
+                
+                <!-- Botón Desplegable -->
+                <button class="btn btn-michi-cta btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoCola" aria-expanded="false" aria-controls="infoCola">
+                  🐾 Leer consejo
+                </button>
 
-          <article class="card-article">
-            <div class="card-image">
-              <img
-                src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce"
-                alt="Gato tomando agua">
-            </div>
-            <div class="card-body">
-              <h4>Trucos para que tomen más agua</h4>
-              <h5>Para cuidarles bien los riñones</h5>
-              <p>A los gatos casi no les gusta el agua estancada del plato de siempre. Comprobamos que con una fuentecita o poniéndoles agua fresca en varias partes de la casa se animan muchísimo más a tomar.</p>
-            </div>
-          </article>
+                <!-- Contenido colapsable -->
+                <div class="collapse" id="infoCola">
+                  <p class="card-text text-secondary pt-2 mb-0 border-top">
+                    La cola es literal el radar de los michis. Si la ves levantada con puntita de interrogación, anda feliz; si la mueve rápido de lado a lado, mejor dale su espacio un rato porque está fastidiado.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- TARJETA 2 -->
+          <div class="col">
+            <article class="card-article card h-100 border-0 shadow-sm bg-michi-card rounded-4 overflow-hidden">
+              <div class="card-image">
+                <img
+                  src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce"
+                  alt="Gato tomando agua"
+                  class="card-img-top object-fit-cover"
+                  style="height: 220px;">
+              </div>
+              <div class="card-body p-4">
+                <h4 class="fw-bold h5 mb-1">Trucos para que tomen más agua</h4>
+                <h5 class="brand-accent h6 mb-3 fw-bold">Para cuidarles bien los riñones</h5>
+                
+                <!-- BOTON DESPLEGABLE -->
+                <button class="btn btn-michi-cta btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#infoAgua" aria-expanded="false" aria-controls="infoAgua">
+                  🐾 Leer consejo
+                </button>
+
+                <!-- CONTENIDO DESPLEGABLE -->
+                <div class="collapse" id="infoAgua">
+                  <p class="card-text text-secondary pt-2 mb-0 border-top">
+                    A los gatos casi no les gusta el agua estancada del plato de siempre. Comprobamos que con una fuentecita o poniéndoles agua fresca en varias partes de la casa se animan muchísimo más a tomar.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
         </div>
       </section>
 
@@ -122,7 +168,9 @@
     <footer class="footer py-5" id="footer" role="contentinfo">
       <div class="container">
         <div class="row gy-4 align-items-center border-bottom pb-4 mb-4">
-          <!-- Columna Izquierda: Logo y lema -->
+
+
+          <!-- LOGO Y LEMA -->
           <div class="col-12 col-md-6 text-center text-md-start">
             <div class="footer__brand-logo mb-2">
               <img src="assets/images/logo2michilovers.jpg" alt="Logo Michi Lovers" class="me-2" style="height: 38px; vertical-align: middle;">
@@ -131,7 +179,7 @@
             <p class="footer__brand-text mb-0">Un espacio hecho con cariño para los amantes de los gatos.</p>
           </div>
 
-          <!-- Columna Derecha: Equipo de desarrollo -->
+          <!-- EQUIPO DE DESARROLLO -->
           <div class="col-12 col-md-6 text-center text-md-end">
             <h5 class="footer__team-title fw-bold mb-3" id="footer-team-title">Equipo de desarrollo</h5>
             <ul class="list-inline mb-0 footer__team-list">
@@ -148,7 +196,7 @@
           </div>
         </div>
 
-        <!-- Copyright -->
+        <!-- COPYRIGHT (PA QUE NO NOS ROBEN EL CONTENIDO JEJEJE)-->
         <div class="row">
           <div class="col-12 text-center">
             <p class="footer__copyright mb-0">&copy; 2026 Michi Lovers. Hecho para quienes aman a los michis.</p>
@@ -157,7 +205,7 @@
       </div>
     </footer>
 
-    <!-- Bootstrap 5.3.3 JS Bundle -->
+    <!-- SCRIPT BOOTSTRAP OBLIGATORIO -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
