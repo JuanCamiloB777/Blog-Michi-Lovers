@@ -1,42 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<<<<<<< HEAD
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Fuentes -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">   
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-           
-        <link rel="stylesheet" href="assets/css/styles.css" />
-        <meta name="description"
-            content="Consejos prácticos para cuidar la alimentación, higiene y bienestar de tu gato.">
-        <title>Cuidados para tu michi | Michi Lovers</title>
-    </head>
-=======
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Michi Lovers - Inicio</title>
+    <title>Consejos y Cuidados — Michi Lovers</title>
+    <meta name="description" content="Consejos prácticos para cuidar la alimentación, higiene y bienestar de tu gato.">
 
-    <!-- Fuentes -->
+    <!-- FUENTES DE GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
-    
-    <!-- Link BOOTSTRAP 5.3.3 -->
+
+    <!-- LINK BOOTSTRAP 5.3.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- AQQUI LINKEO MI CSS OROGINAL EN CARPETA DE ASSETS -->
+
+    <!-- AQUI LINKEO MI CSS ORIGINAL EN CARPETA DE ASSETS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
->>>>>>> ef5a7663273ad7f32ff09d177ed59f11f5124fbb
+  <body>
 
-    <body>
-      <header class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar" role="banner">
+    <!-- HEADER / NAVBAR -->
+    <header class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar" role="banner">
       <div class="container">
 
         <!-- MARCA / LOGO -->
@@ -54,13 +38,13 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar-menu">
             <li class="nav-item">
-              <a href="index.html" class="nav-link active" id="nav-inicio" aria-current="page">Inicio</a>
+              <a href="index.html" class="nav-link" id="nav-inicio">Inicio</a>
             </li>
             <li class="nav-item">
               <a href="adopcion.html" class="nav-link" id="nav-adopcion">Adopciones</a>
             </li>
             <li class="nav-item">
-              <a href="articulos.html" class="nav-link" id="nav-consejos">Consejos</a>
+              <a href="articulos.html" class="nav-link active" id="nav-consejos" aria-current="page">Consejos</a>
             </li>
             <li class="nav-item">
               <a href="quienesSomos.html" class="nav-link" id="nav-quienes-somos">¿Quiénes somos?</a>
@@ -78,64 +62,185 @@
       </div>
     </header>
 
-        <main>
-            <section class="cards-section section--decorated"
-                aria-labelledby="articles-title">
-                <div class="jumbotron text-center">
-  <h1>Consejos de cuidado</h1>
-  <p>Cuidados especiales para tu michi</p> 
-  <h2> ¡Sigue estos consejos para ayudarle a vivir sano, feliz y lleno de ronroneos!</h2>
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-8">
-      <h3>Alimentación</h3>
-      <p>¡Sigue estos consejos para ayudarle a vivir sano, feliz y lleno de ronroneos!</p>
-      <p><b>Tipos de alimentos:</b> Los gatos pueden
-                                    alimentarse con pienso seco,
-                                    comida húmeda, dieta casera supervisada o
-                                    dieta BARF
-                                    (alimentos crudos que imitan su alimentación
-                                    salvaje),
-                                    Es importante que la comida sea completa y
-                                    equilibrada,
-                                    con proteínas de origen animal como primer
-                                    ingrediente,
-                                    vitaminas y minerales adecuados para su
-                                    etapa de vida: gatito, adulto o senior. <br>
-                                    <br><b>Frecuencia de alimentación:</b> Los
-                                    gatos adultos pueden comer una o dos veces
-                                    al día, <br>
-                                    <br><b>Hidratación:</b> Los gatos suelen
-                                    beber poca agua, por lo que es recomendable
-                                    ofrecerles agua fresca y limpia en todo
-                                    momento.</p>
-    </div>
-    <div class="col-sm-8">
-      <h3>Higiene y cuidado físico</h3>
-      <ul >
-                                    <li>Uñas: Recortar cada pocas semanas con
-                                        cuidado</li> <br>
-                                    <li>cepillado: Regular, especialmente en
-                                        razas de pelo largo, para reducir bolas
-                                        de pelo</li><br>
-                                    <li>Oídos y dientes: Revisar y limpiar
-                                        regularmente; el cuidado dental previene
-                                        enfermedades bucales </li><br>
-                                    <li>Caja de arena: Mantener limpia y en un
-                                        lugar tranquilo y accesible </li>
+    <!-- CONTENIDO PRINCIPAL BOOTSTRAP -->
+    <main id="main-content" class="container my-5 pt-3">
 
-                                </ul>
-    
-</div>
-            </section>
-        </main>
-        <!-- FOOTER -->
+      <!-- HERO / BANNER DE BIENVENIDA A ARTICULOS -->
+      <section class="hero-section text-center p-4 p-md-5 mb-4 bg-michi-card rounded-4 shadow-sm">
+        <h1 class="fw-bold display-5 mb-2">Consejos de cuidado 🐾</h1>
+        <p class="h5 brand-accent fw-bold mb-3">Cuidados especiales para tu michi</p>
+        <p class="hero-subtitle lead text-muted mx-auto mb-0" style="max-width: 700px;">
+          ¡Sigue estos consejos para ayudarle a vivir sano, feliz y lleno de ronroneos!
+        </p>
+      </section>
+
+      <!-- ALERTA INFORMATIVA DE VETERINARIA -->
+      <div class="alert alert-warning border-0 shadow-sm rounded-4 mb-4 d-flex align-items-center p-3" role="alert">
+        <span class="fs-3 me-3">🩺</span>
+        <div class="mb-0 text-dark small">
+          <strong>Tip Michi Lover:</strong> Cada gato es único. Recuerda siempre consultar a tu veterinario de confianza antes de realizar cambios drásticos en su alimentación o rutina.
+        </div>
+      </div>
+
+      <!-- SECCION DE CONSEJOS EN TARJETAS CON ACORDEONES -->
+      <section class="sub-articles-section mb-5" aria-labelledby="articles-title">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+
+          <!-- TARJETA 1: ALIMENTACION -->
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm bg-michi-card rounded-4 p-4">
+              <div class="card-body p-0">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center">
+                    <span class="fs-2 me-2">🐟</span>
+                    <h3 class="fw-bold h4 mb-0 text-michi-dark">Alimentación</h3>
+                  </div>
+                  <span class="badge bg-warning text-dark rounded-pill">Esencial</span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  Una buena nutrición es la clave para que tu michi tenga energía constante y un pelaje brillante.
+                </p>
+
+                <!-- ACORDEON BOOTSTRAP PARA ALIMENTACION -->
+                <div class="accordion accordion-flush rounded-3 overflow-hidden border" id="accordionAlimentacion">
+
+                  <!-- PUNTO 1 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colAlimentos">
+                        🥩 Tipos de alimentos
+                      </button>
+                    </h2>
+                    <div id="colAlimentos" class="accordion-collapse collapse" data-bs-parent="#accordionAlimentacion">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Los gatos pueden alimentarse con pienso seco, comida húmeda, dieta casera supervisada o dieta BARF (alimentos crudos que imitan su alimentación salvaje). Es importante que la comida sea completa y equilibrada, con proteínas de origen animal como primer ingrediente.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PUNTO 2 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colFrecuencia">
+                        ⏰ Frecuencia de alimentación
+                      </button>
+                    </h2>
+                    <div id="colFrecuencia" class="accordion-collapse collapse" data-bs-parent="#accordionAlimentacion">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Los gatos adultos suelen comer de una a dos veces al día en horarios regulares para mantener una buena digestión y evitar el sobrepeso.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PUNTO 3 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colHidratacion">
+                        💧 Hidratación constante
+                      </button>
+                    </h2>
+                    <div id="colHidratacion" class="accordion-collapse collapse" data-bs-parent="#accordionAlimentacion">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Los gatos suelen beber poca agua por naturaleza. Se recomienda ofrecerles agua fresca en varias partes de la casa o colocar fuentes de agua en movimiento.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- TARJETA 2: HIGIENE Y CUIDADO FISICO -->
+          <div class="col">
+            <article class="card h-100 border-0 shadow-sm bg-michi-card rounded-4 p-4">
+              <div class="card-body p-0">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div class="d-flex align-items-center">
+                    <span class="fs-2 me-2">✨</span>
+                    <h3 class="fw-bold h4 mb-0 text-michi-dark">Higiene y Cuidado</h3>
+                  </div>
+                  <span class="badge bg-info text-dark rounded-pill">Rutina</span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  Mantener la higiene rutinaria evita enfermedades y ayuda a detectar cualquier molestia a tiempo.
+                </p>
+
+                <!-- ACORDEON BOOTSTRAP PARA HIGIENE -->
+                <div class="accordion accordion-flush rounded-3 overflow-hidden border" id="accordionHigiene">
+
+                  <!-- PUNTO 1 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colUnas">
+                        ✂️ Corte de uñas
+                      </button>
+                    </h2>
+                    <div id="colUnas" class="accordion-collapse collapse" data-bs-parent="#accordionHigiene">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Recortar las puntitas cada pocas semanas con cuidado especial de no cortar la vena interna del gatito.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PUNTO 2 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colCepillado">
+                        🪮 Cepillado de pelaje
+                      </button>
+                    </h2>
+                    <div id="colCepillado" class="accordion-collapse collapse" data-bs-parent="#accordionHigiene">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Realizar un cepillado regular, especialmente en razas de pelo largo, para reducir bolas de pelo en su estómago y mantener la piel sana.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PUNTO 3 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colSaludBucal">
+                        🩺 Oídos y limpieza dental
+                      </button>
+                    </h2>
+                    <div id="colSaludBucal" class="accordion-collapse collapse" data-bs-parent="#accordionHigiene">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Revisar sus oídos periódicamente y realizar limpieza dental suave para prevenir sarro y enfermedades bucales.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- PUNTO 4 -->
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed fw-bold text-dark py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#colArena">
+                        📦 Caja de arena limpia
+                      </button>
+                    </h2>
+                    <div id="colArena" class="accordion-collapse collapse" data-bs-parent="#accordionHigiene">
+                      <div class="accordion-body text-secondary small py-2 px-3">
+                        Mantener su arenero limpio diariamente y ubicado en un sitio tranquilo, ventilado y de fácil acceso para su comodidad.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer class="footer py-5" id="footer" role="contentinfo">
       <div class="container">
         <div class="row gy-4 align-items-center border-bottom pb-4 mb-4">
-
 
           <!-- LOGO Y LEMA -->
           <div class="col-12 col-md-6 text-center text-md-start">
@@ -163,7 +268,7 @@
           </div>
         </div>
 
-        <!-- COPYRIGHT (PA QUE NO NOS ROBEN EL CONTENIDO JEJEJE)-->
+        <!-- COPYRIGHT (PA QUE NO NOS ROBEN EL CONTENIDO JEJEJE) -->
         <div class="row">
           <div class="col-12 text-center">
             <p class="footer__copyright mb-0">&copy; 2026 Michi Lovers. Hecho para quienes aman a los michis.</p>
@@ -171,7 +276,9 @@
         </div>
       </div>
     </footer>
-        <script src="assets/js/script.js"></script>
 
-    </body>
+    <!-- SCRIPT BOOTSTRAP OBLIGATORIO -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
