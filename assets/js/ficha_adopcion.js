@@ -85,36 +85,47 @@ document.addEventListener("DOMContentLoaded", function () {
     // Función para cargar el catalogo de las tarjetas de los michis 
 
     function cargarTarjetas() {
-        if (!contenedor) return;
-        contenedor.innerHTML = "";
+    if (!contenedor) return;
+    contenedor.innerHTML = "";
 
-        for (var i = 0; i < mascotas.length; i++) {
-            var item = mascotas[i];
-            
-            var card = document.createElement("article");
-            card.className = "card-adopcion";
+    for (var i = 0; i < mascotas.length; i++) {
+        var item = mascotas[i];
+        
+        // Elemento raíz para cada tarjeta dentro de la Grid de Bootstrap
+        var cardCol = document.createElement("div");
+        cardCol.className = "col";
 
-            card.innerHTML = `
-                <div class="card-img">
-                    <img src="${item.imagen}" alt="Foto de ${item.nombre}">
-                    <span class="badge-genero">${item.genero}</span>
+        cardCol.innerHTML = `
+            <article class="card card-adopcion h-100 border-0 shadow-sm overflow-hidden">
+                <div class="card-img-wrapper position-relative">
+                    <img src="${item.imagen}" alt="Foto de ${item.nombre}" class="card-img-top object-fit-cover">
+                    <span class="badge badge-genero position-absolute top-0 end-0 m-3 px-3 py-2  shadow-sm">
+                        ${item.genero}
+                    </span>
                 </div>
-                <div class="card-contenido">
-                    <h3>${item.nombre}</h3>
-                    <div class="info-edad">Edad: ${item.edad}</div>
-                    <p class="desc-mascota">${item.descripcion}</p>
-                    <div class="acciones-card">
-                        <button class="btn-adoptar" onclick="iniciarAdopcion('${item.nombre}')">
-                            Adoptar
+
+                <!-- Cuerpo de la Tarjeta -->
+                <div class="card-body d-flex flex-column p-4">
+                    <h3 class="card-title h5 fw-bold mb-1">${item.nombre}</h3>
+                    <div class="info-edad small fw-semibold mb-2">Edad: ${item.edad}</div>
+                    <p class="card-text desc-mascota flex-grow-1 text-secondary mb-4">${item.descripcion}</p>
+                    
+                    <!-- Acciones / Botones -->
+                    <div class="acciones-card mt-auto pt-3 border-top d-flex gap-2 align-items-center">
+                        <button class="btn btn-me-gusta d-inline-flex align-items-center justify-content-center px-3" onclick="darLike(${item.id})">
+                        <span id="like-${item.id}"></span>
+                        </button>
+                        <button class="btn btn-michi-cta flex-grow-1 fw-bold py-2" onclick="iniciarAdopcion('${item.nombre}')">
+                            🐾 Adoptar
                         </button>
                     </div>
                 </div>
-            `;
+            </article>
+        `;
 
-            contenedor.appendChild(card);
-        }
+        contenedor.appendChild(cardCol);
     }
-
+}
     window.iniciarAdopcion = function (nombre) {
         alert("¡Gracias por tu interés en adoptar a " + nombre + "! Nos comunicaremos contigo pronto.");
     };
