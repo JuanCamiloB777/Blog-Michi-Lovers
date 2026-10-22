@@ -6,9 +6,10 @@
         <!-- Fuentes -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-            rel="stylesheet" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+           
         <link rel="stylesheet" href="assets/css/styles.css" />
         <meta name="description"
             content="Consejos prácticos para cuidar la alimentación, higiene y bienestar de tu gato.">
@@ -60,27 +61,18 @@
         <main>
             <section class="cards-section section--decorated"
                 aria-labelledby="articles-title">
-                <div class="container">
-                    <header class="cards-section__header">
-                        <div class="cards-section__header-text">
-                            <span class="section-eyebrow">Consejos de
-                                cuidado</span>
-                            <h1 class="section-title"
-                                id="articles-title">Cuidados especiales para tu
-                                michi</h1>
-                            <p class="section-subtitle">¡Sigue estos consejos
-                                para ayudarle a vivir sano, feliz y lleno de
-                                ronroneos!</p>
-                        </div>
-                    </header>
-
-                    <div class="cards-grid">
-                        <article class="post-card post-card--featured">
-                            <div class="post-card__body">
-
-                                <h2 class="post-card__title">Alimentación</h2>
-                                <p class="post-card__excerpt">
-                                    <b>Tipos de alimentos:</b> Los gatos pueden
+                <div class="jumbotron text-center">
+  <h1>Consejos de cuidado</h1>
+  <p>Cuidados especiales para tu michi</p> 
+  <h2> ¡Sigue estos consejos para ayudarle a vivir sano, feliz y lleno de ronroneos!</h2>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3>Alimentación</h3>
+      <p>¡Sigue estos consejos para ayudarle a vivir sano, feliz y lleno de ronroneos!</p>
+      <p><b>Tipos de alimentos:</b> Los gatos pueden
                                     alimentarse con pienso seco,
                                     comida húmeda, dieta casera supervisada o
                                     dieta BARF
@@ -98,37 +90,25 @@
                                     <br><b>Hidratación:</b> Los gatos suelen
                                     beber poca agua, por lo que es recomendable
                                     ofrecerles agua fresca y limpia en todo
-                                    momento.
-                                </p>
-                                <img
-                                    src="data:image/webp;base64,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"
-                                    alt>
-
-                            </div>
-                        </article>
-                        <article class="post-card">
-                            <div class="post-card__body">
-                                <h2 class="post-card__title">Higiene y cuidado
-                                    físico</h2>
-
-                                <ul class="post-card__excerpt">
+                                    momento.</p>
+    </div>
+    <div class="col-sm-8">
+      <h3>Higiene y cuidado físico</h3>
+      <ul >
                                     <li>Uñas: Recortar cada pocas semanas con
-                                        cuidado</li>
+                                        cuidado</li> <br>
                                     <li>cepillado: Regular, especialmente en
                                         razas de pelo largo, para reducir bolas
-                                        de pelo</li>
+                                        de pelo</li><br>
                                     <li>Oídos y dientes: Revisar y limpiar
                                         regularmente; el cuidado dental previene
-                                        enfermedades bucales </li>
+                                        enfermedades bucales </li><br>
                                     <li>Caja de arena: Mantener limpia y en un
                                         lugar tranquilo y accesible </li>
 
                                 </ul>
-
-                            </div>
-                        </article>
-                    </div>
-                </div>
+    
+</div>
             </section>
         </main>
         <footer class="footer" role="contentinfo">
