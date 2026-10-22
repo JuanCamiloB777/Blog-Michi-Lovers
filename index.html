@@ -10,46 +10,51 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
       rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
 
-    <!-- Navbar -->
-    <header class="navbar" id="navbar" role="banner">
-      <div class="container">
-        <nav class="navbar__inner" aria-label="Navegación principal">
-          <a href="index.html" class="navbar__logo" id="navbar-logo"
-            aria-label="Michi Lovers - Ir al inicio">
-            <img src="assets/images/logo.png" alt="Logo Michi Lovers"
-              class="navbar__logo-img">
-            Michi<span>Lovers</span>
-          </a>
-          <ul class="navbar__menu" id="navbar-menu" role="list">
-            <li><a href="index.html" class="navbar__link is-active"
-                id="nav-inicio" aria-current="page">Inicio</a></li>
-            <li><a href="adopcion.html" class="navbar__link"
-                id="nav-adopcion">Adopciones</a></li>
-            <li><a href="articulos.html" class="navbar__link"
-                id="nav-consejos">Consejos</a></li>
-            <li><a href="quienesSomos.html" class="navbar__link"
-                id="nav-quienes-somos">¿Quiénes somos?</a></li>
-            <li><a href="contacto.html" class="navbar__link"
-                id="nav-contacto">Contacto</a></li>
-          </ul>
-          <div class="navbar__cta" id="navbar-cta">
-            <a href="adopcion.html" class="btn btn--dark btn--sm"
-              id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
-          </div>
-          <button class="navbar__toggle" id="navbar-toggle" type="button"
-            aria-label="Abrir menú de navegación" aria-expanded="false"
-            aria-controls="navbar-menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </button>
-        </nav>
+    <header class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar" role="banner">
+  <div class="container">
+    <!-- Logo / Marca -->
+    <a href="index.html" class="navbar-brand d-flex align-items-center me-auto" id="navbar-logo" aria-label="Michi Lovers - Ir al inicio">
+      <img src="/assets/images/logo2michilovers.jpg" alt="Logo Michi Lovers" class="navbar__logo-img me-2" style="height: 40px; object-fit: contain;">
+      <span class="brand-text">Michi<span class="brand-accent">Lovers</span></span>
+    </a>
+
+    <!-- Botón Toggle para vista móvil -->
+    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú Colapsable y CTA -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" id="navbar-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active" id="nav-inicio" aria-current="page">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="adopcion.html" class="nav-link" id="nav-adopcion">Adopciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="articulos.html" class="nav-link" id="nav-consejos">Consejos</a>
+        </li>
+        <li class="nav-item">
+          <a href="quienesSomos.html" class="nav-link" id="nav-quienes-somos">¿Quiénes somos?</a>
+        </li>
+        <li class="nav-item">
+          <a href="contacto.html" class="nav-link" id="nav-contacto">Contacto</a>
+        </li>
+      </ul>
+
+      <!-- Botón Call to Action -->
+      <div class="navbar__cta d-flex mt-3 mt-lg-0" id="navbar-cta">
+        <a href="adopcion.html" class="btn btn-michi-cta w-100 w-lg-auto" id="navbar-cta-btn">&#x1F43E; Quiero Adoptar</a>
       </div>
-    </header>
+    </div>
+  </div>
+</header>
 
     <!-- Contenido principal -->
     <main class="home-main">
@@ -123,36 +128,44 @@
 
     </main>
 
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__brand">
-            <div class="footer__brand-logo">
-              <img src="assets/images/logo.png" alt
-                class="footer__brand-logo-img">
-              <span>Michi<span
-                  class="footer__brand-highlight">Lovers</span></span>
-            </div>
-            <p class="footer__brand-text">Un espacio hecho con cariño para los
-              amantes de los gatos.</p>
-          </div>
-          <section class="footer__team" aria-labelledby="footer-team-title">
-            <h2 class="footer__team-title" id="footer-team-title">Equipo de
-              desarrollo</h2>
-            <ul class="footer__team-list">
-              <li>David Marca</li>
-              <li>Jhoiner Andretty</li>
-              <li>Juan Bohorquez</li>
-              <li>Laura Garcia</li>
-              <li>Natalia Villalobos</li>
-            </ul>
-          </section>
+   <footer class="footer py-5" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="row gy-4 align-items-center border-bottom pb-4 mb-4">
+      <!-- Columna Izquierda: Logo y lema -->
+      <div class="col-12 col-md-6 text-center text-md-start">
+        <div class="footer__brand-logo mb-2">
+          <img src="assets/images/logo2michilovers.jpg" alt="Logo Michi Lovers" class="me-2" style="height: 38px; vertical-align: middle;">
+          <span class="brand-text">Michi<span class="brand-accent">Lovers</span></span>
         </div>
-        <p class="footer__copyright">&copy; 2026 Michi Lovers. Hecho para
-          quienes aman a los michis.</p>
+        <p class="footer__brand-text mb-0">Un espacio hecho con cariño para los amantes de los gatos.</p>
       </div>
-    </footer>
+
+      <!-- Columna Derecha: Equipo de desarrollo -->
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <h5 class="footer__team-title fw-bold mb-3" id="footer-team-title">Equipo de desarrollo</h5>
+        <ul class="list-inline mb-0 footer__team-list">
+          <li class="list-inline-item">David Marca</li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item">Jhoiner Andretty</li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item">Juan Bohorquez</li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item">Laura Garcia</li>
+          <li class="list-inline-item">•</li>
+          <li class="list-inline-item">Natalia Villalobos</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="row">
+      <div class="col-12 text-center">
+        <p class="footer__copyright mb-0">&copy; 2026 Michi Lovers. Hecho para quienes aman a los michis.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
 
